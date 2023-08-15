@@ -1,6 +1,7 @@
-def GreetingsController < ApplicationController
+class MessagesController < ApplicationController
   def index
-    @message = Greeting.all.sample
+    puts "Requested Format: #{request.format}"
+    @message = Message.all.sample
 
     respond_to do |format|
       format.xml { render xml: @message }

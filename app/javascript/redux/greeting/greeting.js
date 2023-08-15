@@ -2,7 +2,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 // Base URL
-const URL = `http://localhost:3000/greetings.json`;
+const URL = `http://localhost:3000/messages.json`;
 
 export const fetchGreetings = createAsyncThunk(
   'greetings/getGreetings',

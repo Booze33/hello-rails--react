@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root 'root#index'
 
-  resources :greetings, only: [:index]
+  resources :messages, only: [:index]
 end
